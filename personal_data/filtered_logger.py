@@ -7,7 +7,7 @@ import os
 from mysql.connector import connection
 
 
-DB_FILEDS = ("name", "email", "phone", "ssn", "password")
+PII_FIELDS = ("name", "email", "phone", "ssn", "password")
 
 
 class RedactingFormatter(logging.Formatter):
@@ -43,7 +43,7 @@ def get_logger() -> logging.Logger:
     logger.setLevel(logging.INFO)
     logger.propagate = False
 
-    formatter = RedactingFormatter(DB_FILEDS)
+    formatter = RedactingFormatter(PII_FIELDS)
     stream_handler = logging.StreamHandler()
     stream_handler.setFormatter(formatter)
 

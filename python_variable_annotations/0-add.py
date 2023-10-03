@@ -1,13 +1,11 @@
 #!/usr/bin/env python3
-"""
-    Sum two numbers
-"""
 
+"""
+Sum two numbers
+"""
 
 def add(a: float, b: float) -> float:
     """
-    a -> float
-    b -> float
-    return sum of a and b
+    Add two numbers and return the sum.
     """
-    return a+b
+    return a + b

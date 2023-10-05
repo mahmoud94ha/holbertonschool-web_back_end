@@ -53,4 +53,3 @@ class Server:
         pag = index_range(page, page_size)
         self.dataset()
         return self.__dataset[pag[0]: pag[1]]
-    

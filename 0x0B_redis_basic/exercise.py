@@ -92,4 +92,3 @@ class Cache:
         if value:
             return int(value)
         return value
-    

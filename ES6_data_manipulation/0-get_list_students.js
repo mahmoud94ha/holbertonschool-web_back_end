@@ -1,7 +1,8 @@
 export default function getListStudents() {
-    const obj1 = { firstName: 'Guillaume', id: 1, location: 'San Francisco' };
-    const obj2 = { firstName: 'James', id: 2, location: 'Columbia' };
-    const obj3 = { firstName: 'Serena', id: 5, location: 'San Francisco' };
-  
-    return [obj1, obj2, obj3];
+    const array = [
+      { id: 1, firstName: 'Guillaume', location: 'San Francisco' },
+      { id: 2, firstName: 'James', location: 'Columbia' },
+      { id: 5, firstName: 'Serena', location: 'San Francisco' },
+    ];
+    return array;
   }

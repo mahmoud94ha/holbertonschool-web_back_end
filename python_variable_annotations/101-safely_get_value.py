@@ -2,13 +2,14 @@
 """
 Type-annotated function safely_get_value
 """
-from typing import Sequence, Union, Any, TypeVar, Mapping
+import typing
 
-R = TypeVar('T')
+T = typing.TypeVar("T")
 
 
-def safely_get_value(dct: Mapping, key: Any,
-                     default: Union[R, None] = None) -> Union[Any, R]:
+def safely_get_value(
+    dct: typing.Mapping, key: typing.Any, default: typing.Union[T, None] = None
+) -> typing.Union[typing.Any, T]:
     """
     Type-annotated function safely_get_value
     """
